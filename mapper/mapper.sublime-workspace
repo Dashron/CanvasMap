@@ -1,0 +1,1339 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"render_s",
+				"render_states"
+			],
+			[
+				"RENDER_",
+				"RENDER_REQUESTED"
+			],
+			[
+				"createServer",
+				"https.createServer(opts, requestListener);"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/aaron/Programming/src/canvas-maps/index.js",
+			"settings":
+			{
+				"buffer_size": 1655,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tile.js",
+			"settings":
+			{
+				"buffer_size": 4344,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mapper.js",
+			"settings":
+			{
+				"buffer_size": 7228,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/aaron/Programming/src/canvas-maps/maps/main",
+			"settings":
+			{
+				"buffer_size": 148,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packa inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/aaron/Programming/src/canvas-maps/tiles/1",
+		"/home/aaron/Programming/src/canvas-maps/tiles/2",
+		"/home/aaron/Programming/src/canvas-maps/tiles/3",
+		"/home/aaron/Programming/src/canvas-maps/mapper/mapper.js",
+		"/home/aaron/Programming/src/canvas-maps/tiles/9",
+		"/home/aaron/Programming/src/canvas-maps/tiles/8",
+		"/home/aaron/Programming/src/canvas-maps/tiles/7",
+		"/home/aaron/Programming/src/canvas-maps/tiles/6",
+		"/home/aaron/Programming/src/canvas-maps/tiles/5",
+		"/home/aaron/Programming/src/canvas-maps/tiles/4",
+		"/home/aaron/Programming/src/canvas-maps/index.html",
+		"/home/aaron/Programming/src/canvas-maps/maps/main",
+		"/home/aaron/Programming/src/canvas-maps/index.js",
+		"/home/aaron/Programming/src/canvas-maps/maps/5",
+		"/home/aaron/Programming/src/canvas-maps/maps/9",
+		"/home/aaron/Programming/src/canvas-maps/maps/8",
+		"/home/aaron/Programming/src/canvas-maps/maps/7",
+		"/home/aaron/Programming/src/canvas-maps/maps/6",
+		"/home/aaron/Programming/src/canvas-maps/maps/4",
+		"/home/aaron/Programming/src/canvas-maps/maps/3",
+		"/home/aaron/Programming/src/canvas-maps/maps/2",
+		"/home/aaron/Programming/src/canvas-maps/maps/1",
+		"/home/aaron/Programming/src/Github.js/example/index.js",
+		"/home/aaron/Programming/src/Github.js/libs/github.js",
+		"/home/aaron/Programming/src/Github.js/package.json",
+		"/home/aaron/Programming/src/Github.js/example/config.json.example",
+		"/home/aaron/Programming/src/Github.js/example/config.json",
+		"/home/aaron/Programming/src/Github.js/index.js",
+		"/home/aaron/Programming/src/Github.js/.jshintrc",
+		"/home/aaron/Programming/src/Github.js/libs/index.js",
+		"/home/aaron/Programming/src/avbad/libs/connection.js",
+		"/home/aaron/Programming/src/avbad/libs/model.js",
+		"/home/aaron/Programming/src/avbad/libs/cachedmodel.js",
+		"/home/aaron/Programming/src/avbad/README.md",
+		"/home/aaron/Programming/src/avbad/web/dynamic.js",
+		"/home/aaron/Programming/src/avbad/web/routes.js",
+		"/home/aaron/Programming/src/avbad/web/templates/avbad/index.html",
+		"/home/aaron/Programming/src/avbad/web/templates/user/login.html",
+		"/home/aaron/Programming/src/avbad/web/templates/template.html",
+		"/home/aaron/Programming/src/avbad/web/controllers/avbad.js",
+		"/home/aaron/Programming/src/avbad/libs/cookie.js",
+		"/home/aaron/Programming/src/avbad/config/dev/server.json",
+		"/home/aaron/Programming/src/avbad/config/prod/server.json",
+		"/home/aaron/Programming/src/avbad/server.js",
+		"/home/aaron/Programming/src/avbad/data/models/user.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/controllers/console.js",
+		"/home/aaron/Programming/src/avbad/web/web.js",
+		"/home/aaron/Programming/src/avbad/web/templates/console.html",
+		"/home/aaron/Programming/src/avbad/package.json",
+		"/home/aaron/Programming/src/avbad/config/prod/server.js",
+		"/home/aaron/Programming/src/avbad/config/dev/web.json",
+		"/home/aaron/Programming/src/avbad/config/prod/web.json",
+		"/home/aaron/Programming/src/avbad/.jshintrc",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/config/dev/game.json",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/game/map.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/libs/model.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/map/map.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/controllers/map/section.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/controllers/map.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/map/map_section.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/controllers/map/interaction.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/map/section/interaction/many.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/map/section/interaction/edit.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/map/section/edit.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/map/edit.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/libs/cachedmodel.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/map/section/many.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/dynamic.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/session.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/map/section_interaction.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/server.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/map/section/interaction/index.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/controller.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/map/many.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/controllers/map\n/interaction.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/controllers/map\n/section.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/controllers/tools/mapper.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/controllers/map_interaction.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/controllers/map_section.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/section/edit.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/web.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/map/edit.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/map/many.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/section/index.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/section/many.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/section/edit.html{{#if map.id}}",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/controllers/user.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/user.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/libs/connection.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/map/index.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/need_role.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/map/one.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/interaction/many.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/index.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/one.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/mapper/many.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/tools/map_maker/index.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/script/entity_script.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/script/script.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/script/map_section_script.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/entities/entity.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/scripts/script.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/scripts.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/game/entities/entity.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/game/entities/interactable.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/game/entities/attackable.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/game/entities/canAttack.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/game/entities/canMove.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/game/entities/movable.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/entities/static.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/map.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/data/models/tile.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/user/login.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/config/prod/game.json",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/config/prod/server.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/libs/cookie.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/user/list.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/user/register.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/config/dev/server.json",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/game/main.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/game/client.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/node_modules/bifocals/bifocals.js",
+		"/home/aaron/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/game/connection.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/web/templates/500.html",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/libs/old.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/libs/database.js",
+		"/home/aaron/Programming/src/Dotcloud/mud1/Mud1/libs/redis.js"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/aaron/Programming/src/avbad",
+			"/home/aaron/Programming/src/Dotcloud/mud1/Mud1",
+			"/home/aaron/Dropbox/Programming/Dotcloud/mud1/Mud1",
+			"/home/aaron/Dropbox/projects_new/Mud1",
+			"/home/aaron/Dropbox/projects_new/roads/components",
+			"/home/aaron/Dropbox/projects_new/roads/resources",
+			"/home/aaron/Dropbox/projects_new/roads",
+			"/home/aaron/Dropbox/projects_new/gfw2.js/components",
+			"/home/aaron/Dropbox/projects_new/gfw2.js",
+			"/home/aaron/Dropbox/projects_new/gfw2.js/node_modules/mu2",
+			"/home/aaron/Dropbox/projects_new/gfw2.js/components",
+			"/home/aaron/Dropbox/projects_new/gfw2.js",
+			"/home/aaron/Dropbox/projects_new/gfw2.js/components",
+			"/home/aaron/Dropbox/projects_new/gfw2.js/resources",
+			"/home/aaron/Dropbox/projects_new/gfw2.js/node_modules/mu2",
+			"/home/aaron/Dropbox/projects_new/gfw2.js/components",
+			"/home/aaron/Dropbox/projects_new/gfw2.js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"grid",
+			"tile",
+			"status",
+			"map_data",
+			"viewport_x",
+			"map_tile",
+			"images",
+			"getTile",
+			"console",
+			"center",
+			"map_data",
+			"map_tile",
+			"tile_side",
+			"width",
+			"height",
+			"maps",
+			"map_data",
+			"black",
+			"');\n",
+			"uris.host",
+			"ModelRequest",
+			"global.",
+			"MapSectionModule",
+			"console.log",
+			"'interactions'",
+			".definition",
+			"_definition",
+			"ModelRequest",
+			"_module",
+			".definition",
+			"sections",
+			"loadFromDB",
+			"loadFromDb",
+			"map",
+			"console",
+			"timer",
+			"_cache",
+			"redis.",
+			"loadFromDB",
+			"modifier",
+			".updated_fields",
+			"updated_fields",
+			"_onDelete",
+			"definition",
+			"'));",
+			"_validationError",
+			"});",
+			"};",
+			"null",
+			"console",
+			"this",
+			"super_",
+			"cache_key",
+			"super",
+			"database",
+			"config",
+			"cookie",
+			"databases",
+			"console",
+			"console.log",
+			"ValidationHandler",
+			"updated_fields",
+			"definition",
+			"updated_fields",
+			".start",
+			"this._request",
+			"match error",
+			"if doesn",
+			"valid",
+			"view_component",
+			"setResponse",
+			"setContentT",
+			"parent",
+			"_response",
+			"setResponse",
+			"rendering",
+			"render = function",
+			"content_type",
+			"content_Type",
+			"setContentType",
+			"setTemplate",
+			"load = function",
+			"error = function",
+			"console",
+			"ip",
+			"render = function",
+			"this.Model",
+			"updated_fields",
+			"last_ip",
+			"require",
+			"new_request.ready",
+			"secure",
+			"ModelRequest",
+			"	}",
+			"render_states",
+			"process.nextTick",
+			"RENDER_CANCEL",
+			"function render",
+			"mu",
+			"getConnection",
+			"db",
+			"database",
+			"console.log(error);",
+			".error",
+			"unmatched_route",
+			"statusNotFound",
+			"render(",
+			"render(false",
+			"render(false\nrender(false",
+			"Promise",
+			"promise",
+			"render = function",
+			";",
+			"setDir",
+			"1",
+			"cookie",
+			"render",
+			"Cookie",
+			"view.",
+			"console",
+			"RENDER_COMPLETE",
+			"render_states",
+			"statusCode",
+			"RenderMode",
+			"setDir",
+			".RENDER",
+			"_dir",
+			"render_mode"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"tiles"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/aaron/Programming/src/canvas-maps/index.js",
+					"settings":
+					{
+						"buffer_size": 1655,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1151,
+								1151
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tile.js",
+					"settings":
+					{
+						"buffer_size": 4344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1584,
+								1584
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1173.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "mapper.js",
+					"settings":
+					{
+						"buffer_size": 7228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7193,
+								7193
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2837.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/aaron/Programming/src/canvas-maps/maps/main",
+					"settings":
+					{
+						"buffer_size": 148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								57
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 98.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"avbad",
+				"web/controllers/avbad.js"
+			],
+			[
+				"index.",
+				"web/templates/avbad/index.html"
+			],
+			[
+				"server.js",
+				"server.js"
+			],
+			[
+				"model",
+				"libs/model.js"
+			],
+			[
+				"datamap",
+				"data/models/map/map_section.js"
+			],
+			[
+				"map",
+				"data/models/map/map.js"
+			],
+			[
+				"section",
+				"web/controllers/map/section.js"
+			],
+			[
+				"interaction.js",
+				"web/controllers/map/interaction.js"
+			],
+			[
+				"section.js",
+				"web/controllers/map/section.js"
+			],
+			[
+				"controllersection",
+				"web/controllers/map/section.js"
+			],
+			[
+				"dynamic",
+				"web/dynamic.js"
+			],
+			[
+				"cached",
+				"libs/cachedmodel.js"
+			],
+			[
+				"controllermap",
+				"web/controllers/map.js"
+			],
+			[
+				"interaction",
+				"data/models/map/section_interaction.js"
+			],
+			[
+				"dyn",
+				"web/dynamic.js"
+			],
+			[
+				"d",
+				"web/dynamic.js"
+			],
+			[
+				"web",
+				"web/web.js"
+			],
+			[
+				"server",
+				"server.js"
+			],
+			[
+				"cachedmodel",
+				"libs/cachedmodel.js"
+			],
+			[
+				"cachedmode",
+				"libs/cachedmodel.js"
+			],
+			[
+				"map.js",
+				"data/models/map/map.js"
+			],
+			[
+				"dynam",
+				"web/dynamic.js"
+			],
+			[
+				"user",
+				"web/controllers/user.js"
+			],
+			[
+				"controllers",
+				"web/controllers/tools/mapper.js"
+			],
+			[
+				"modelmap",
+				"data/models/map/map.js"
+			],
+			[
+				"maps",
+				"data/models/map/map.js"
+			],
+			[
+				"dyna",
+				"web/dynamic.js"
+			],
+			[
+				"mapsection",
+				"data/models/map/map_section.js"
+			],
+			[
+				"model.",
+				"libs/model.js"
+			],
+			[
+				"cac",
+				"libs/cachedmodel.js"
+			],
+			[
+				"controlleruser",
+				"web/controllers/user.js"
+			],
+			[
+				"connection.js",
+				"libs/connection.js"
+			],
+			[
+				"datauser",
+				"data/models/user.js"
+			],
+			[
+				"connection",
+				"libs/connection.js"
+			],
+			[
+				"bifocals",
+				"node_modules/bifocals/bifocals.js"
+			],
+			[
+				"redis",
+				"libs/redis.js"
+			],
+			[
+				"web.js",
+				"web/web.js"
+			],
+			[
+				"database",
+				"libs/database.js"
+			],
+			[
+				"modeluser",
+				"data/models/user.js"
+			],
+			[
+				"modelsession",
+				"data/models/session.js"
+			],
+			[
+				"session",
+				"data/models/session.js"
+			],
+			[
+				"login",
+				"web/templates/user/login.html"
+			],
+			[
+				"templconso",
+				"web/templates/console.html"
+			],
+			[
+				"prof",
+				"web/templates/user/profile.html"
+			],
+			[
+				"cookie.",
+				"libs/cookie.js"
+			],
+			[
+				"client",
+				"game/client.js"
+			],
+			[
+				"connec",
+				"game/connection.js"
+			],
+			[
+				"controllerconsole",
+				"web/controllers/console.js"
+			],
+			[
+				"web.j",
+				"web/web.js"
+			],
+			[
+				"cookie",
+				"libs/cookie.js"
+			],
+			[
+				"blogrouter",
+				"resources/blog/blog.router.js"
+			],
+			[
+				"blog.router",
+				"resources/blog/blog.router.js"
+			],
+			[
+				"blog.resource",
+				"resources/blog/blog.resource.js"
+			],
+			[
+				"userrouter",
+				"resources/user/user.router.js"
+			],
+			[
+				"sessionmodel",
+				"resources/user/models/session.model.js"
+			],
+			[
+				"main.js",
+				"main.js"
+			],
+			[
+				"example",
+				"resources/example/example.router.js"
+			],
+			[
+				"view",
+				"components/view.js"
+			],
+			[
+				"user.resourcejs",
+				"resources/user/user.resource.js"
+			],
+			[
+				"resource",
+				"components/resource.js"
+			],
+			[
+				"view.js",
+				"components/view.js"
+			],
+			[
+				"user.router",
+				"resources/user/user.router.js"
+			],
+			[
+				"example.router",
+				"resources/example/example.router.js"
+			],
+			[
+				"index.h",
+				"resources/example/templates/index.html"
+			],
+			[
+				"resource.js",
+				"components/resource.js"
+			],
+			[
+				"userresource",
+				"resources/user/user.resource.js"
+			],
+			[
+				"exampleresource",
+				"resources/example/example.resource.js"
+			],
+			[
+				"blog.router.js",
+				"resources/blog/blog.router.js"
+			],
+			[
+				"post.model.js",
+				"resources/blog/models/post.model.js"
+			],
+			[
+				"template.html",
+				"resources/example/templates/template.html"
+			],
+			[
+				"index.html",
+				"resources/example/templates/index.html"
+			],
+			[
+				"router.js",
+				"components/router.js"
+			],
+			[
+				"user.routes",
+				"resources/user/user.router.js"
+			],
+			[
+				"session.model",
+				"resources/user/models/session.model.js"
+			],
+			[
+				"login.ht",
+				"resources/user/templates/login.html"
+			],
+			[
+				"user.model.js",
+				"resources/user/models/user.model.js"
+			],
+			[
+				"userroute",
+				"resources/user/user.router.js"
+			],
+			[
+				"user.model.",
+				"resources/user/models/session.model.js"
+			],
+			[
+				"user.model",
+				"resources/user/models/user.model.js"
+			],
+			[
+				"view.",
+				"components/view.js"
+			],
+			[
+				"model.tests",
+				"tests/components/model.tests.js"
+			],
+			[
+				"model.js",
+				"components/model.js"
+			],
+			[
+				"mode",
+				"components/model.js"
+			],
+			[
+				"post.model",
+				"resources/blog/models/post.model.js"
+			],
+			[
+				"exampleren",
+				"resources/example/example.renderers.js"
+			],
+			[
+				"vows.js",
+				"node_modules/vows/lib/vows.js"
+			],
+			[
+				"filter",
+				"components/filter.js"
+			],
+			[
+				"filter.js",
+				"components/filter.js"
+			],
+			[
+				"f",
+				"components/filter.js"
+			],
+			[
+				"data",
+				"components/database.js"
+			],
+			[
+				"coo",
+				"components/cookie.js"
+			],
+			[
+				"post",
+				"resources/blog/models/post.model.js"
+			],
+			[
+				"router",
+				"components/router.js"
+			],
+			[
+				"rouer.js",
+				"components/router.js"
+			],
+			[
+				"resou",
+				"components/resource.js"
+			],
+			[
+				"acce",
+				"components/accept_header.js"
+			],
+			[
+				"cookie.js",
+				"components/cookie.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true
+}

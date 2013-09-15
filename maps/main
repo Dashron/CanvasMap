@@ -1,0 +1,12 @@
+{
+	"height" : 1000,
+	"width" : 1000,
+	"tile_side" : 75,
+	
+	"start" : {
+		"tile" : "/tiles/5",
+		"x" : 500,
+		"y" : 500,
+		"position" : "center"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"neighbors" : {
+		"1": "/tiles/7",
+		"2": "/tiles/8",
+		"3": "/tiles/9",
+		"4": "/tiles/1",
+		"6": "/tiles/3",
+		"7": "/tiles/4",
+		"8": "/tiles/5",
+		"9": "/tiles/6"
+	},
+	"img" : "/images/tiles/2.png"
+}
