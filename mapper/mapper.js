@@ -172,7 +172,7 @@ Mapper.prototype.moveViewport = function (x_dir, y_dir) {
  * [renderViewport description]
  * @return {[type]} [description]
  */
-Mapper.prototype.renderViewport = function () {
+Mapper.prototype.renderViewport = function (time) {
 	// wipe old content
 	this.viewport_context.clearRect(0, 0, this.viewport_context.canvas.width, this.viewport_context.canvas.height);
 
@@ -276,8 +276,9 @@ Mapper.prototype.start = function (callback) {
 		var tile_data = JSON.parse(this.response);
 
 		_self.start_tile = new Tile(tile_data, _self.map_data.start.x, _self.map_data.start.y, _self.map_data.tile_side);
-		_self.start_tile.draw(_self.context);
-		callback();
+		_self.start_tile.draw(_self.context, function () {
+			callback();
+		});
 	};
 
 	xhr.send();

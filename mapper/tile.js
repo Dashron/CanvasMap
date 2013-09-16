@@ -48,25 +48,57 @@ Tile.prototype.load = function (data, x, y, len) {
 };
 
 /**
+ * [ description]
+ * @param  {[type]} mapper [description]
+ * @return {[type]}        [description]
+ */
+Tile.prototype.drawAllNeighbors = function (context, callback) {
+	var _self = this;
+
+	var callbackWhenComplete = function () {
+		for(var key in _self.neighbors) {
+			if (_self.neighbors[key].state != TILE_STATES.DRAWN) {
+				return;
+			}
+		}
+
+		if (callback) {
+			return callback();
+		}
+	};
+
+	this.loadAllNeighbors(function () {
+		for (var key in _self.neighbors) {
+			if (_self.neighbors[key].state != TILE_STATES.DRAWN) {
+				_self.neighbors[key].draw(context, callbackWhenComplete);
+			}
+		}
+	});
+};
+
+/**
  * [loadAllNeighbors description]
  * @param  {Function} callback [description]
  * @return {[type]}            [description]
  */
 Tile.prototype.loadAllNeighbors = function (callback) {
 	var _self = this;
-	var count = 0;
 
 	var callbackWhenComplete = function (tile) {
-		count--;
-
-		if (count === 0 && typeof callback === "function") {
-			return callback(_self.neighbors);
+		var key = null;
+		// if any of the neighbors have not yet been loaded, do not fire the callback
+		for (key in _self.neighbors) {
+			if (_self.neighbors[key].state != TILE_STATES.LOADED) {
+				return;
+			}
+		}
+		if (callback) {
+			return callback();
 		}
 	};
 
 	for (var key in this.neighbors) {
 		this.loadNeighbor(key, callbackWhenComplete);
-		count++;
 	}
 };
 
@@ -92,7 +124,7 @@ Tile.prototype.loadNeighbor = function (index, callback) {
 	}
 
 	var tile = new Tile();
-
+	tile_cache[url] = tile;
 	_self.neighbors[index] = tile;
 
 	var xhr = new XMLHttpRequest();
@@ -120,14 +152,17 @@ Tile.prototype.loadNeighbor = function (index, callback) {
  * @param  {[type]} context [description]
  * @return {[type]}         [description]
  */
-Tile.prototype.draw = function (context) {
+Tile.prototype.draw = function (context, callback) {
 	var _self = this;
-	this.state = TILE_STATES.DRAWING;
+	if (this.state == TILE_STATES.LOADED) {
+		this.state = TILE_STATES.DRAWING;
 
-	_self.loadImage(function (image) {
-		context.drawImage(image, _self.x, _self.y);
-		_self.state = TILE_STATES.DRAWN;
-	});
+		_self.loadImage(function (image) {
+			context.drawImage(image, _self.x, _self.y);
+			_self.state = TILE_STATES.DRAWN;
+			callback();
+		});
+	}
 };
 
 /**

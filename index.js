@@ -4,11 +4,8 @@ mapper.load('/maps/main', function () {
 
 	mapper.start(function () {
 		mapper.setViewport(document.getElementById('viewport').getContext('2d'));
-		mapper.start_tile.loadAllNeighbors(loadToViewport);
-		
-		setTimeout(function () {
-			mapper.renderViewport();
-		}, 700);
+		mapper.start_tile.drawAllNeighbors(mapper.context);
+		requestAnimationFrame(mapper.renderViewport.bind(mapper));
 	});
 });
 
@@ -26,19 +23,7 @@ function loadToViewport(neighbors) {
 			continue;
 		}
 
-		neighbor.draw(mapper.context);
-		//FUCK
-		//The problem is that we aren't tying back in the additional paths
-		//  a -> b
-		//  |    |
-		// \ /  \ /
-		//  c -> d
-		//  
-		//  a loads b then c. c loads d (or maybe b loads d). then the other one (b or c) will load d as a new entity.
-		//  Before we load an element, we need to check and see if that element exists. I think this is the final straw, we need unique tiles
-		//  with duplicate images, no self references map tiles :(
-		//  
-		neighbor.loadAllNeighbors(loadToViewport);
+		//neighbor.loadAllNeighbors(loadToViewport);
 	}
 }
 
