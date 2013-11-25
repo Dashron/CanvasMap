@@ -1,3 +1,5 @@
+"use strict";
+
 var TILE_STATES = {
 	'NOT_LOADED' : 0,
 	'LOADING' : 1,
@@ -6,8 +8,6 @@ var TILE_STATES = {
 	'DRAWN' : 4
 };
 
-var tile_cache = {};
-
 /**
  * [Tile description]
  * @param {[type]} data [description]
@@ -15,9 +15,12 @@ var tile_cache = {};
  * @param {[type]} y    [description]
  * @param {[type]} len  [description]
  */
-var Tile = function Tile (data, x, y, len) {
-	if (data) {
-		this.load(data, x, y, len);
+var Tile = function Tile (x, y, image) {
+	if (typeof x !== "undefined" && typeof y !== "undefined" && image) {
+		this.x = x;
+		this.y = y;
+		this.img = image;
+		this.state = TILE_STATES.LOADED;
 	} else {
 		this.state = TILE_STATES.NOT_LOADED;
 	}
@@ -29,22 +32,10 @@ Tile.prototype.x = null;
 Tile.prototype.y = null;
 Tile.prototype.len = null;
 Tile.prototype.state = TILE_STATES.NOT_LOADED;
+Tile.prototype.context = null;
 
-/**
- * [load description]
- * @param  {[type]} data [description]
- * @param  {[type]} x    [description]
- * @param  {[type]} y    [description]
- * @param  {[type]} len  [description]
- * @return {[type]}      [description]
- */
-Tile.prototype.load = function (data, x, y, len) {
-	this.neighbors = data.neighbors;
-	this.img = data.img;
-	this.x = x;
-	this.y = y;
-	this.len = len;
-	this.state = TILE_STATES.LOADED;
+Tile.prototype.setNeighbors = function (neighbors) {
+	this.neighbors = neighbors;
 };
 
 /**
@@ -55,6 +46,11 @@ Tile.prototype.load = function (data, x, y, len) {
 Tile.prototype.drawAllNeighbors = function (context, callback) {
 	var _self = this;
 
+	if (!callback) {
+		callback = context;
+		context = this.context;
+	}
+	
 	var callbackWhenComplete = function () {
 		for(var key in _self.neighbors) {
 			if (_self.neighbors[key].state != TILE_STATES.DRAWN) {
@@ -100,51 +96,6 @@ Tile.prototype.loadAllNeighbors = function (callback) {
 	for (var key in this.neighbors) {
 		this.loadNeighbor(key, callbackWhenComplete);
 	}
-};
-
-/**
- * [loadNeighbor description]
- * @param  {[type]}   index    [description]
- * @param  {Function} callback [description]
- * @return {[type]}            [description]
- */
-Tile.prototype.loadNeighbor = function (index, callback) {
-	var _self = this;
-
-	if (typeof this.neighbors[index] === "object") {
-		return callback(this.neighbors[index]);
-	}
-
-	var url = this.neighbors[index];
-
-	// todo this isn't working
-	if (typeof tile_cache[url] === "object") {
-		this.neighbors[index] = tile_cache[url];
-		return callback(tile_cache[url]);
-	}
-
-	var tile = new Tile();
-	tile_cache[url] = tile;
-	_self.neighbors[index] = tile;
-
-	var xhr = new XMLHttpRequest();
- 
-	xhr.open("GET", url, true);
-	xhr.responseType = "text";
-
-	xhr.onload = function(e) {
-		var tile_data = JSON.parse(this.response);
-		var corner = _self.getNeighborCorner(index);
-
-		tile.load(tile_data, corner.x, corner.y, _self.len);
-
-		if (typeof callback === "function") {
-			callback(tile);
-		}
-	};
-
-	xhr.send();
-	tile.state = TILE_STATES.LOADING; 
 };
 
 /**
@@ -197,11 +148,57 @@ Tile.prototype.loadImage = function (callback) {
 };
 
 /**
+ * [loadNeighbor description]
+ * @param  {[type]}   index    [description]
+ * @param  {Function} callback [description]
+ * @return {[type]}            [description]
+ */
+/*Tile.prototype.loadNeighbor = function (index, callback) {
+	var _self = this;
+
+	if (typeof this.neighbors[index] === "object") {
+		return callback(this.neighbors[index]);
+	}
+
+	var url = this.neighbors[index];
+
+	// todo this isn't working
+	if (typeof tile_cache[url] === "object") {
+		this.neighbors[index] = tile_cache[url];
+		return callback(tile_cache[url]);
+	}
+
+	var tile = new Tile();
+	tile_cache[url] = tile;
+	_self.neighbors[index] = tile;
+
+	var xhr = new XMLHttpRequest();
+ 
+	xhr.open("GET", url, true);
+	xhr.responseType = "text";
+
+	xhr.onload = function(e) {
+		var tile_data = JSON.parse(this.response);
+		var corner = _self.getNeighborCorner(index);
+
+		tile.load(tile_data, corner.x, corner.y, _self.len);
+
+		if (typeof callback === "function") {
+			callback(tile);
+		}
+	};
+
+	xhr.send();
+	tile.state = TILE_STATES.LOADING; 
+};*/
+
+
+/**
  * [getNeighborCorner description]
  * @param  {[type]} index [description]
  * @return {[type]}       [description]
  */
-Tile.prototype.getNeighborCorner = function (index) {
+/*Tile.prototype.getNeighborCorner = function (index) {
 	var corner = {};
 
 	switch (index) {
@@ -251,4 +248,4 @@ Tile.prototype.getNeighborCorner = function (index) {
 	}
 
 	return corner;
-};
+};*/
