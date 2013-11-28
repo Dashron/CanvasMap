@@ -51,6 +51,32 @@ TileFactory.prototype.load = function (url, callback) {
 	});
 };
 
+TileFactory.prototype.loadNeighbors = function (neighbors, callback) {
+	var tiles = {};
+
+	for (var i = 0; i < neighbors.length; i++) {
+		tiles[neighbors[i].position.x + ' ' + neighbors[i].position.y] = false;
+		this.createTile(neighbors[i], function (tile) {
+			tiles[tile.x + ' ' + tile.y] = tile;
+
+			var final_tiles = [];
+			var keys = Object.keys(tiles);
+			
+			for (var i = 0; i < keys.length; i++) {
+				if (tiles[keys[i]] === false) {
+					return;
+				} else {
+					final_tiles.push(tile);
+				}
+			}
+
+			callback(final_tiles);
+		});
+	}
+
+	return tiles;
+};
+
 var MapFactory = function (map_creator) {
 	Factory.call(this);
 

@@ -8,8 +8,8 @@ var Map = function (width, height, tile_side) {
 	this.tile_side = tile_side;
 
 	this.context = document.createElement('canvas').getContext('2d');
-	this.context.canvas.height = height;
-	this.context.canvas.width = width;
+	this.context.canvas.height = height * tile_side;
+	this.context.canvas.width = width * tile_side;
 	this.tiles = [];
 
 	// dev
@@ -48,6 +48,22 @@ Map.prototype.start_tile = null;
  * @type {Object}
  */
 Map.prototype.pending_callbacks = null;
+
+/**
+ * [ description]
+ * @param  {[type]} x    [description]
+ * @param  {[type]} y    [description]
+ * @param  {[type]} tile [description]
+ * @return {[type]}      [description]
+ */
+Map.prototype.addTile = function (tile) {
+	if (typeof this.tiles[tile.x] != "array") {
+		this.tiles[tile.x] = [];
+	}
+
+	this.tiles[tile.x][tile.y] = tile;
+	tile.len = this.tile_side;
+};
 
 /**
  * Returns the tile that would contain viewport point x and y
@@ -99,7 +115,7 @@ Map.prototype.setStartTile = function (tile) {
 		throw new Error('You can only provide a Tile object to the method "setStartTile"');
 	}
 	this.start_tile = tile;
-	this.start_tile.context = this.context;
+	this.addTile(tile);
 };
 
 /**
@@ -113,4 +129,14 @@ Map.prototype.start = function (callback) {
 		throw new Error('You can not start the Map without first setting a starting tile');
 	}
 	this.start_tile.draw(this.context, callback);
-}
+};
+
+/**
+ * [draw description]
+ * @param  {[type]} context [description]
+ * @return {[type]}         [description]
+ */
+Map.prototype.draw = function (tile_x, tile_y, callback) {
+	var tile = this.tiles[tile_x][tile_y];
+	tile.draw(this.context, callback);
+};
