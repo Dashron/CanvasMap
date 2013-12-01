@@ -66,6 +66,22 @@ Map.prototype.addTile = function (tile) {
 };
 
 /**
+ * [ description]
+ * @param  {[type]} viewport [description]
+ * @param  {[type]} factory  [description]
+ * @return {[type]}          [description]
+ */
+Map.prototype.drawToViewport = function (viewport, factory) {
+	var _self = this;
+	factory.loadNeighbors(this.start_tile.neighbors.items, function (neighbors) {
+		for (var i = 0; i < neighbors.length; i++) {
+			_self.addTile(neighbors[i]);
+			_self.draw(neighbors[i].x, neighbors[i].y);
+		}
+	});
+};
+
+/**
  * Returns the tile that would contain viewport point x and y
  * 
  * @param  {[type]} viewport_x [description]

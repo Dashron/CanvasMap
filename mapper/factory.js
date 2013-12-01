@@ -61,12 +61,12 @@ TileFactory.prototype.loadNeighbors = function (neighbors, callback) {
 
 			var final_tiles = [];
 			var keys = Object.keys(tiles);
-			
+
 			for (var i = 0; i < keys.length; i++) {
 				if (tiles[keys[i]] === false) {
 					return;
 				} else {
-					final_tiles.push(tile);
+					final_tiles.push(tiles[keys[i]]);
 				}
 			}
 

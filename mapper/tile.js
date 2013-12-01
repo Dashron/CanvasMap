@@ -15,12 +15,13 @@ var TILE_STATES = {
  * @param {[type]} y    [description]
  * @param {[type]} len  [description]
  */
-var Tile = function Tile (x, y, image, neighbors) {
-	if (typeof x !== "undefined" && typeof y !== "undefined" && image) {
+var Tile = function Tile (uri, x, y, image, neighbors) {
+	if (typeof x !== "undefined" && typeof y !== "undefined" && image && uri) {
 		this.x = x;
 		this.y = y;
 		this.img = image;
-		this.neighbors = neighbors
+		this.neighbors = neighbors;
+		this.uri = uri;
 		this.state = TILE_STATES.LOADED;
 	} else {
 		this.state = TILE_STATES.NOT_LOADED;
@@ -33,6 +34,7 @@ Tile.prototype.x = null;
 Tile.prototype.y = null;
 Tile.prototype.len = null;
 Tile.prototype.state = TILE_STATES.NOT_LOADED;
+Tile.prototype.uri = null;
 
 /**
  * [ description]
@@ -107,7 +109,9 @@ Tile.prototype.draw = function (context, callback) {
 		_self.loadImage(function (image) {
 			context.drawImage(image, _self.x * _self.len, _self.y * _self.len);
 			_self.state = TILE_STATES.DRAWN;
-			callback();
+			if (callback) {
+				callback();
+			}
 		});
 	}
 };
