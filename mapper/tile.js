@@ -37,40 +37,6 @@ Tile.prototype.state = TILE_STATES.NOT_LOADED;
 Tile.prototype.uri = null;
 
 /**
- * [ description]
- * @param  {[type]} mapper [description]
- * @return {[type]}        [description]
- */
-/*Tile.prototype.drawAllNeighbors = function (context, callback) {
-	var _self = this;
-
-	if (!callback) {
-		callback = context;
-		context = this.context;
-	}
-	
-	var callbackWhenComplete = function () {
-		for(var key in _self.neighbors) {
-			if (_self.neighbors[key].state != TILE_STATES.DRAWN) {
-				return;
-			}
-		}
-
-		if (callback) {
-			return callback();
-		}
-	};
-
-	this.loadAllNeighbors(function () {
-		for (var key in _self.neighbors) {
-			if (_self.neighbors[key].state != TILE_STATES.DRAWN) {
-				_self.neighbors[key].draw(context, callbackWhenComplete);
-			}
-		}
-	});
-};*/
-
-/**
  * [loadAllNeighbors description]
  * @param  {Function} callback [description]
  * @return {[type]}            [description]
@@ -146,6 +112,40 @@ Tile.prototype.loadImage = function (callback) {
 
 	image.src = this.img;
 };
+
+/**
+ * [ description]
+ * @param  {[type]} mapper [description]
+ * @return {[type]}        [description]
+ */
+/*Tile.prototype.drawAllNeighbors = function (context, callback) {
+	var _self = this;
+
+	if (!callback) {
+		callback = context;
+		context = this.context;
+	}
+	
+	var callbackWhenComplete = function () {
+		for(var key in _self.neighbors) {
+			if (_self.neighbors[key].state != TILE_STATES.DRAWN) {
+				return;
+			}
+		}
+
+		if (callback) {
+			return callback();
+		}
+	};
+
+	this.loadAllNeighbors(function () {
+		for (var key in _self.neighbors) {
+			if (_self.neighbors[key].state != TILE_STATES.DRAWN) {
+				_self.neighbors[key].draw(context, callbackWhenComplete);
+			}
+		}
+	});
+};*/
 
 /**
  * [loadNeighbor description]
