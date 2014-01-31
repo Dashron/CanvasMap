@@ -73,8 +73,25 @@ Viewport.prototype.move = function (delta_x, delta_y) {
 	this.x += delta_x;
 	this.y += delta_y;
 
-	this.onMove();
-	this.renderViewport();
+	if (this.x < 0) {
+		this.x = 0;
+	}
+
+	if (this.x + this.width > this.source_context.width) {
+		this.x = this.source_context.width;
+	}
+
+	if (this.y < 0) {
+		this.y = 0;
+	}
+
+	if (this.y + this.height > this.source_context.height) {
+		this.y = this.source_context.height;
+	}
+
+	if (this.onMove) {
+		this.onMove();
+	}
 };
 
 /**
@@ -95,13 +112,27 @@ Viewport.prototype.moveTo = function (x, y) {
 Viewport.prototype.render = function (time) {
 	// wipe old content
 	this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+	var read_width = null;
+	var read_height = null;
+
+	if (this.canvas.width > this.source_context.canvas.width) {
+		read_width = this.source_context.canvas.width;
+	} else {
+		read_width = this.canvas.width;
+	}
+
+	if (this.canvas.height > this.source_context.canvas.height) {
+		read_height = this.source_context.canvas.height;
+	} else {
+		read_height = this.canvas.height;
+	}
 
 	// draw from the source context at x,y with width and height
 	this.context.drawImage(this.source_context.canvas, this.x, this.y,
-									this.canvas.width, this.canvas.height,
+									read_width, this.canvas.height,
 									// onto the viewport context at 0,0 with width and height
 									0, 0,
-									this.canvas.width, this.canvas.height);
+									read_width, read_height);
 
 	// dev
 	//this.context.strokeRect(this.viewport_x, this.viewport_y, this.viewport_context.canvas.width, this.viewport_context.canvas.height);
