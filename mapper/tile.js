@@ -36,7 +36,8 @@ var Tile = (function () {
 	Tile.prototype.len = null;
 	Tile.prototype.state = TILE_STATES.NOT_LOADED;
 	Tile.prototype.uri = null;
-
+	Tile.prototype.collision_map = null;
+	
 	/**
 	 * [loadAllNeighbors description]
 	 * @param  {Function} callback [description]
@@ -113,6 +114,15 @@ var Tile = (function () {
 
 		image.src = this.img;
 	};
+
+	/**
+	 * [ description]
+	 * @param  {[type]} collision_map [description]
+	 * @return {[type]}               [description]
+	 */
+	Tile.prototype.setCollision = function (collision_map) {
+		this.collision_map = collision_map;
+	}
 
 	/**
 	 * [ description]
