@@ -121,7 +121,21 @@ var Tile = (function () {
 	 * @return {[type]}               [description]
 	 */
 	Tile.prototype.setCollision = function (collision_map) {
-		this.collision_map = collision_map;
+		this.collision_map = new Uint32Array(collision_map.length);
+
+		var row = 0;
+		var len = 0;
+
+		// this need to be broken into 32 bit integers and 32 length arrays
+		for (var i = 0; i < collision_map.length; i++) {
+			row = 0;
+			len = collision_map[i].length;
+			for (var j = 0; j < len; j++) {
+				// multiply the 1 or 0 by 2 to the power of the digit position (left high right 0)
+				row += collision_map[i][j] * Math.pow(2, (len - j - 1));
+			}
+			this.collision_map[i] = row;
+		}
 	}
 
 	/**
