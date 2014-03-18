@@ -15,8 +15,8 @@ var Map = (function () {
 		this.tile_list = [];
 
 		// dev
-		this.context.canvas.style.border = "solid 1px red";
-		document.getElementById('dev').appendChild(this.context.canvas);
+		//this.context.canvas.style.border = "solid 1px red";
+		//document.getElementById('dev').appendChild(this.context.canvas);
 	};
 
 	/**
@@ -115,7 +115,26 @@ var Map = (function () {
 		tile.draw(this.context, callback);
 	};
 
+	/**
+	 * [ description]
+	 * @param  {[type]} x [description]
+	 * @param  {[type]} y [description]
+	 * @return {[type]}   [description]
+	 */
+	Map.prototype.getTileFromCoords = function (x, y) {
+		var tile_x = this.tile_map[Math.floor(x/this.tile_side)];
+		var tile = null;
 
+		if (tile_x) {
+			tile = tile_x[Math.floor(y/this.tile_side)];
+		}
+
+		if (tile instanceof Tile) {
+			return tile;
+		}
+
+		return false;
+	};
 
 	/**
 	 * [ description]
